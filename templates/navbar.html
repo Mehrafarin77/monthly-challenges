@@ -1,0 +1,7 @@
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'base.html' %}">
+{% endblock head %}
+<div class="container">
+    <li><a href="{% url 'challenges:list_of_months' %}">Back to Months</a></li>
+</div>

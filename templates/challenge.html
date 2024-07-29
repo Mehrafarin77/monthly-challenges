@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% include 'navbar.html' %}
+
+    <h4>{{ month|title }}'s challenge</h4>
+
+    {% if challenge is None %}
+         <h3>No challenge for {{ month }} yet!</h3>
+    {% else %}
+        <h1>{{ challenge }}</h1>
+    {% endif %}
+
+{% endblock content %}
